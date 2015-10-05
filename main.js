@@ -24,10 +24,7 @@ var intervalID = window.setInterval(function displayClock() {
 
   $("body").css("background-color", time);
 
-
 }, 1000);
-
-
 
 
 })();
