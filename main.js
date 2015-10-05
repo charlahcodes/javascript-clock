@@ -1,6 +1,7 @@
 (function () {
 
 var intervalID = window.setInterval(function displayClock() {
+  
   var newDate = new Date();
   var hours = newDate.getHours();
   var minutes = newDate.getMinutes();
@@ -18,10 +19,15 @@ var intervalID = window.setInterval(function displayClock() {
     seconds = "0" + seconds;
   };
 
-  var time = hours + ":" + minutes + ":" + seconds;
+  var time = "#" + hours + '' + minutes + '' + seconds;
   $('#clock').text(time);
 
+  $("body").css("background-color", time);
+
+
 }, 1000);
+
+
 
 
 })();
